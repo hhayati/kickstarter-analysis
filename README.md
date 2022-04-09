@@ -1,6 +1,6 @@
 # An Analysis of Kickstarter Campaigns
 
-# Overview of Project
+## Overview of Project
 * We will be performing data analysis on several hundred crowdfunding projects to uncover any hidden trends. The projects for Challenge #1 include theater plays. The campaign outcomes are visualized based on their launch dates and their funding goals. 
 ### Purpose
 Louise’s has a theater play project for which she is seeking funding from sponsors. We are trying to help her to investigate if chance of success for her play funding can be increased by selecting an optimized launch date or by adjusting the size of the budget for the play.  In other words, she wants to know how different campaigns fared in relation to their launch dates and their funding goals.  We will also learn some useful tools in Excel including pivot tables, filtering, and plotting to help with our analysis. 
@@ -9,39 +9,15 @@ We selected a subset of total projects in “theater” category, and “plays�
 
 ### Analysis of Outcomes Based on Launch Date
 
-Count of outcomes	Column Labels			
-Row Labels	successful	failed	canceled	Grand Total
-Jan	56	33	7	96
-Feb	71	39	3	113
-Mar	56	33	3	92
-Apr	71	40	2	113
-May	111	52	3	166
-Jun	100	49	4	153
-Jul	87	50	1	138
-Aug	72	47	4	123
-Sep	59	34	4	97
-Oct	65	50		115
-Nov	54	31	3	88
-Dec	37	35	3	75
-Grand Total	839	493	37	1369
- 
+Number of successful, failed and canceled projects are plotted below for each month in the calender year.
+
+![Theater Outcomes Based on Launch Date](https://user-images.githubusercontent.com/58461542/162555466-a3c8b576-6b0c-4189-9910-4d0e7c98ba25.png)
 
 ### Analysis of Outcomes Based on Goals
-Goal	Number Successful	Number Failed	Number Canceled
-less than 1000	141	45	0
-1000 to 4999	388	146	0
-5000 to 9999	93	76	0
-10000 to 14999	39	33	0
-15000 to 19999	12	12	0
-20000 to 24999	9	11	0
-25000 to 29999	1	4	0
-30000 to 34999	3	8	0
-35000 to 39999	4	2	0
-40000 to 44999	2	1	0
-45000 to 49999	0	1	0
-50000 or more	2	14	0
+Number of successful, failed and canceled projects are plotted below versus the funding goal.
 
- 
+ ![Outcomes_vs_Goals](https://user-images.githubusercontent.com/58461542/162555506-02ccff98-68f9-4d4b-bc9c-ba79c1749a52.png)
+
 
 ### Challenges and Difficulties Encountered
 * To produce the second deliverable (Outcomes based on Goal) the instructions were confusing as it seems it wants to use “filter” and “count if” to produce the table. It is not clear if you use “filter” how you can create the requested tables.  The text is very vague here:
@@ -66,6 +42,7 @@ I eventually had to write  a separate formula for 36 cells in requested table us
 
 ### What are some limitations of this dataset?
 * The dataset is biased toward smaller projects (small fund goal). It is hard to generalize trends for mid size and larger projects.
+* The currency for projects in different countries is different. Ideally, the fund gols need to be converted and compared in similar currency. 
 
 ### What are some other possible tables and/or graphs that we could create?
 * It will be useful to create plots of “percentage” of successful and failed projects with respect to total projects. 
